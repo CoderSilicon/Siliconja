@@ -14,7 +14,6 @@ interface ElementCardProps {
     col: number
   }
   colorClass: string
-  isSelected: boolean
 }
 function ElementCard({ element, colorClass }: ElementCardProps) {
   return (
@@ -37,15 +36,6 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
 }
 
 export default function PeriodicTable() {
-  const [selectedElement, setSelectedElement] = useState<{
-    id: number
-    symbol: string
-    name: string
-    number: number
-    category: string
-    row: number
-    col: number
-  } | null>(null)
 
   return (
     <div className="min-h-screen p-2 md:p-4 lg:p-8">
@@ -61,7 +51,7 @@ export default function PeriodicTable() {
                   CATEGORY_COLORS[element.category as keyof typeof CATEGORY_COLORS] ||
                   "bg-gray-100 border-gray-400 text-gray-900"
                 }
-                isSelected={selectedElement?.id === element.id}
+                
               />
             </div>
           ))}
@@ -87,7 +77,6 @@ export default function PeriodicTable() {
                   CATEGORY_COLORS[element.category as keyof typeof CATEGORY_COLORS] ||
                   "bg-gray-100 border-gray-400 text-gray-900"
                 }
-                isSelected={selectedElement?.id === element.id}
               />
             </div>
           ))}
