@@ -28,7 +28,7 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
           <div className="text-xl font-semibold leading-tight lexend-400 ">{element.number}</div>
         </div>
         <div className="text-lg md:text-md font-bold leading-tight lexend-600">{element.symbol}</div>
-        <div className=" sm:text-[0.563rem] text-xs leading-tight lexend-300 truncate">
+        <div className=" sm:text-[0.563rem] leading-tight lexend-300 truncate">
   {element.name}
 </div>
       </div>

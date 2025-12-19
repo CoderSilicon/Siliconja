@@ -16,17 +16,13 @@ const Header = () => {
 
               <div>
                 <h1 className="text-2xl md:text-4xl font-bold lexend-600 leading-tight">
-                  Siliconj3
+                  Silicoñ3 
                 </h1>
-                <p className="text-xs md:text-sm text-gray-600 mt-0.5 lexend-400">A Guide Book for All elements</p>
+                <p className="text-xs md:text-sm text-gray-600 mt-0.5 lexend-400"> Encyclopedia of Elements</p>
               </div>
             </div>
 
-            {/* Element Count Badge */}
-            <div className="hidden md:flex items-center gap-2 bg-amber-50 text-black px-4 py-2  text-sm font-semibold">
-              <span className="text-lg">⚛️</span>
-              <span>118 Elements</span>
-            </div>
+
           </div>
         </div>
       </div>
