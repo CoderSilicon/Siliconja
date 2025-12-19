@@ -23,14 +23,14 @@ export default async function elementBrief({
 
   return (
     <div
-      className={`min-h-screen  py-8 text-white ${getCategoryColor(
+      className={`min-h-screen py-8 text-white ${getCategoryColor(
         element.category
       )}`}
     >
       <div className="mx-auto max-w-5xl p-4 sm:p-6 lg:p-8">
         {/* Hero Section - Large Symbol */}
         <div className="mb-8 text-center">
-          <div className="mb-4 inline-flex items-center justify-center   bg-div p-8 ">
+          <div className="mb-4 inline-flex items-center justify-center  shadow-xl py-8 px-12 ">
             <span className="font-mono text-8xl font-bold tracking-tight sm:text-9xl lexend-600">
               {element.symbol}
             </span>

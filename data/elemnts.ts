@@ -1081,14 +1081,15 @@ export const ELEMENTS = [
 ];
 
 export const CATEGORY_COLORS = {
-  "alkali": "bg-teal-700",
-  "alkaline-earth": "bg-red-700",
-  "transition": "bg-violet-700",
-  "post-transition": "bg-emerald-700",
-  "metalloid": "bg-yellow-700",
-  "reactive-nonmetal": "bg-blue-700",
-  "noble-gas": "bg-pink-700",
-  "lanthanide": "bg-sky-700",
-  "actinide": "bg-amber-800",
-  "unknown": "bg-slate-700",
+  "alkali": "bg-[#0F766E]",            // cold deep teal
+  "alkaline-earth": "bg-[#7F1D1D]",    // cold dark crimson
+  "transition": "bg-[#3730A3]",        // cold indigo
+  "post-transition": "bg-[#1E3A2B]",   // cold forest green
+  "metalloid": "bg-[#854D0E]",         // muted cold amber
+  "reactive-nonmetal": "bg-[#1E40AF]", // true cold blue (NOT cyan)
+  "noble-gas": "bg-[#9D174D]",         // cold magenta glow
+  "lanthanide": "bg-[#075985]",        // icy sky blue
+  "actinide": "bg-[#92400E]",          // dark nuclear amber
+  "unknown": "bg-[#334155]",           
 };
+

@@ -20,15 +20,17 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
       <div
         className={`
         w-full aspect-square p-1 text-center flex flex-col items-center justify-center
-        transition-all duration-200 hover:shadow-lg hover:scale-105 cursor-pointer
+        transition-all duration-200  hover:scale-90  cursor-pointer
         ${colorClass} text-white 
       `}
       >
         <div className="hidden md:flex justify-start items-center">
-          <div className="text-xs font-semibold leading-tight lexend-400 ">{element.number}</div>
+          <div className="text-xl font-semibold leading-tight lexend-400 ">{element.number}</div>
         </div>
         <div className="text-lg md:text-md font-bold leading-tight lexend-600">{element.symbol}</div>
-        <div className=" text-xs msm:text-[3px] leading-tight truncate lexend-300">{element.name}</div>
+        <div className=" sm:text-[0.563rem] text-xs leading-tight lexend-300 truncate">
+  {element.name}
+</div>
       </div>
     </Link>
   )

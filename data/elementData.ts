@@ -61,7 +61,7 @@ export const PeriodicData: ElementType[] = [
     reactivity: "High",
     reactivityType: "Immensly Flammable",
     acidBaseBehavior: "Can act as acid or base",
-    desc: "Hydrogen is the lightest element and is the most abundant chemical substance in the universe.",
+    desc: "Hydrogen is the lightest element and is the most abundant chemical element in the universe, constituting about 75% of all normal matter.",
     atomicMass: 1.008,
     atomicRadius: 53,
     boilingPoint: 20.271,
