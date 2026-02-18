@@ -1081,15 +1081,15 @@ export const ELEMENTS = [
 ];
 
 export const CATEGORY_COLORS = {
-  "alkali": "bg-[#6DA9A4]",            // muted teal
-  "alkaline-earth": "bg-[#E5989B]",    // dusty rose
-  "transition": "bg-[#8E9AAF]",        // desaturated periwinkle
-  "post-transition": "bg-[#84A98C]",   // sage green
-  "metalloid": "bg-[#E9C46A]",         // muted warm amber
-  "reactive-nonmetal": "bg-[#5C7AEA]", // soft royal blue
-  "noble-gas": "bg-[#C77DFF]",         // pastel violet
-  "lanthanide": "bg-[#4EA8DE]",        // cool sky blue
-  "actinide": "bg-[#F4A261]",          // soft terracotta
-  "unknown": "bg-[#ADB5BD]",           // modern neutral gray
+  "alkali": "bg-[#1F7A63]",
+  "alkaline-earth": "bg-[#B56576]",
+  "transition": "bg-[#3A4F9F]",
+  "post-transition": "bg-[#2A9D8F]",
+  "metalloid": "bg-[#C68B59]",
+  "reactive-nonmetal": "bg-[#2563EB]",
+  "noble-gas": "bg-[#9D4EDD]",
+  "lanthanide": "bg-[#118AB2]",
+  "actinide": "bg-[#A97142]",
+  "unknown": "bg-[#495057]",
 };
 
