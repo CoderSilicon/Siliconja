@@ -1,50 +1,25 @@
 type ElementType = {
   id: number;
-
   symbol: string;
   name: string;
-
   discoveryYear: number;
   discoveredBy: string;
-
-  category:
-    | "Reactive Nonmetal"
-    | "Metal"
-    | "Metalloid"
-    | "Noble Gas"
-    | "Alkali"
-    | "Alkaline Earth"
-    | "Transition"
-    | "Post-Transition"
-    | "Lanthanide"
-    | "Actinide"
-    | "Unknown";
-
+  category:| "Reactive Nonmetal" | "Metal" | "Metalloid" | "Noble Gas" | "Alkali" | "Alkaline Earth" | "Transition" | "Post-Transition" | "Lanthanide" | "Actinide" | "Unknown";
   bondingType: "Covalent" | "Ionic" | "Metallic" | "Hydrogen Bond" | "Unknown";
-
   reactivity: "Low" | "Medium" | "High" | "Unknown";
-
-  reactivityType: string; // e.g. "Immensely Flammable"
-
+  reactivityType: string; 
   acidBaseBehavior: "Acidic" | "Basic" | "Neutral" | "Can act as acid or base" | "Unknown";
-
   desc: string;
-
-  atomicMass: number; // amu
-  atomicRadius: number; // pm
-  boilingPoint: number; // K
-  meltingPoint: number; // K
-  density: number; // g/cm³
-
+  atomicMass: number; 
+  atomicRadius: number; 
+  boilingPoint: number; 
+  meltingPoint: number; 
+  density: number; 
   oxidationStates: number[];
-
   electronConfiguration: string;
-
   electronegativity: number;
-
-  ionizationEnergy: string; // kept as string due to units
+  ionizationEnergy: string; 
   electronAffinity: string;
-
   isobars: number[];
   isotopes: string[];
 };

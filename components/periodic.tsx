@@ -1,58 +1,72 @@
-"use client"
-import { ELEMENTS, CATEGORY_COLORS } from "@/data/elemnts"
-import Link from "next/link"
+"use client";
+import { ELEMENTS, CATEGORY_COLORS } from "@/data/elements";
+import Link from "next/link";
 
 interface ElementCardProps {
   element: {
-    id: number
-    symbol: string
-    name: string
-    number: number
-    category: string
-    row: number
-    col: number
-  }
-  colorClass: string
+    id: number;
+    symbol: string;
+    name: string;
+    number: number;
+    category: string;
+    row: number;
+    col: number;
+  };
+  colorClass: string;
 }
 function ElementCard({ element, colorClass }: ElementCardProps) {
   return (
     <Link href={`/element/${element.id}`}>
       <div
         className={`
-        w-full aspect-square p-1 text-center flex flex-col items-center justify-center
-        transition-all duration-200  hover:scale-90  cursor-pointer
-        ${colorClass} text-white 
+        w-full aspect-square p-2 
+        relative flex flex-col justify-between items-start
+        transition-all duration-200 hover:scale-95 cursor-pointer
+        ${colorClass} text-white hover:z-10 shadow-sm
       `}
       >
-        <div className="hidden md:flex justify-start items-center">
-          <div className="text-xl font-semibold leading-tight lexend-400 ">{element.number}</div>
+        {/* Geometric Accent: A decorative square in the top-right corner */}
+        <div className="absolute top-0 right-0 w-3 h-3 bg-zinc-100/50 backdrop-blur-sm hover:hidden" />
+
+        {/* Top: Atomic Number (Left Aligned & Monospaced) */}
+        <div className="flex justify-between w-full">
+          <span className="text-xs md:text-sm font-mono opacity-90 leading-none lexend-300">
+            {element.number}
+          </span>
         </div>
-        <div className="text-lg md:text-md font-bold leading-tight lexend-600">{element.symbol}</div>
-        <div className="leading-tight lexend-300 truncate">
-  {element.name}
-</div>
+
+        {/* Center: Symbol (Left Aligned, mimicking the 'Si' logo) */}
+        <div className="mt-auto mb-1">
+          <span className="text-2xl md:text-3xl font-bold tracking-tighter leading-none block lexend-600">
+            {element.symbol}
+          </span>
+        </div>
+
+        {/* Bottom: Name (Uppercase & Micro-sized) */}
+        <div className="w-full border-t hover:border-none border-white/20 pt-1">
+          <p className="text-[8px] md:text-[9px] uppercase tracking-widest truncate opacity-90 font-medium lexend-400">
+            {element.name}
+          </p>
+        </div>
       </div>
     </Link>
-  )
+  );
 }
 
 export default function PeriodicTable() {
-
   return (
     <div className="min-h-screen p-2 md:p-4 lg:p-8">
       <div className="overflow-x-auto">
-        <div
-          className="inline-grid gap-0.5 p-2 md:p-4 grid-cols-6 md:hidden "
-        >
+        <div className="inline-grid gap-0.5 p-2 md:p-4 grid-cols-6 md:hidden ">
           {ELEMENTS.map((element) => (
             <div key={element.id} className="md:hidden">
               <ElementCard
                 element={element}
                 colorClass={
-                  CATEGORY_COLORS[element.category as keyof typeof CATEGORY_COLORS] ||
-                  "bg-gray-100 border-gray-400 text-gray-900"
+                  CATEGORY_COLORS[
+                    element.category as keyof typeof CATEGORY_COLORS
+                  ] || "bg-gray-100 border-gray-400 text-gray-900"
                 }
-                
               />
             </div>
           ))}
@@ -75,8 +89,9 @@ export default function PeriodicTable() {
               <ElementCard
                 element={element}
                 colorClass={
-                  CATEGORY_COLORS[element.category as keyof typeof CATEGORY_COLORS] ||
-                  "bg-gray-100 border-gray-400 text-gray-900"
+                  CATEGORY_COLORS[
+                    element.category as keyof typeof CATEGORY_COLORS
+                  ] || "bg-gray-100 border-gray-400 text-gray-900"
                 }
               />
             </div>
@@ -84,27 +99,29 @@ export default function PeriodicTable() {
         </div>
       </div>
 
-        <div className="mt-8 md:mt-12 max-w-5xl mx-auto">
-          <div className="bg-white/80   border border-gray-200 p-4 md:p-6">
-            <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 lexend-400">
-              
-              Element Categories
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
-              {Object.entries(CATEGORY_COLORS).map(([category, colorClass]) => (
+      <div className="mt-8 md:mt-12 max-w-5xl mx-auto">
+        <div className="bg-white/80  p-4 md:p-6">
+          <h3 className="text-lg md:text-xl font-bold text-gray-800 mb-4 flex items-center gap-2 lexend-400">
+            Element Categories
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+            {Object.entries(CATEGORY_COLORS).map(([category, colorClass]) => (
+              <Link href={`elementCatogories/${category}`} key={category}>
                 <div
-                  key={category}
                   className="flex items-center gap-2 md:gap-3 p-2 md:p-3"
                 >
-                  <div className={`w-5 h-5 md:w-6 md:h-6 ${colorClass} border border-white/20`} />
+                  <div
+                    className={`w-5 h-5 md:w-6 md:h-6 ${colorClass} border border-white/20`}
+                  />
                   <span className="text-xs md:text-sm text-gray-700 font-medium capitalize">
                     {category.replace("-", " ")}
                   </span>
                 </div>
-              ))}
-            </div>
+              </Link>
+            ))}
           </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }

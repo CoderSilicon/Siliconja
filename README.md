@@ -1,4 +1,6 @@
-# Silicønja or Si<sup>3</sup> – The Ultimate Guide for All Chemical Elements
+![Silicønja](app/assets/logo.png)
+# Silicønja or Si<sup>3</sup>
+The Ultimate Guide for All Chemical Elements
 
 **Si<sup>3</sup>** is a by student & for students web application which is a **student-focused chemistry reference** designed to provide structured, accurate, and visual information for all **118 chemical elements**. The application emphasizes scientific clarity, standardized data representation, and symbol-based learning aligned with modern chemistry curricula.
 
