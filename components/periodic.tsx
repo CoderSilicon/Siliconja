@@ -16,31 +16,30 @@ interface ElementCardProps {
 }
 function ElementCard({ element, colorClass }: ElementCardProps) {
   return (
-    <Link href={`/element/${element.id}`}>
+    <Link href={`/element/${element.id}`} className="w-full">
       <div
         className={`
-         aspect-square p-2 
-        relative flex flex-col justify-between items-start
-        transition-all duration-200 hover:scale-95 cursor-pointer
-        ${colorClass} text-white hover:z-10 
-      `}
+      w-full aspect-square
+      p-2
+      relative flex flex-col justify-between items-start
+      transition-transform duration-200 hover:scale-95
+      cursor-pointer
+      ${colorClass}
+      text-white
+    `}
       >
-
-        {/* Top: Atomic Number (Left Aligned & Monospaced) */}
         <div className="flex justify-between w-full">
           <span className="text-xs md:text-sm font-mono opacity-90 leading-none lexend-300">
             {element.number}
           </span>
         </div>
 
-        {/* Center: Symbol (Left Aligned, mimicking the 'Si' logo) */}
         <div className="mt-auto mb-1">
           <span className="text-2xl md:text-3xl font-bold tracking-tighter leading-none block lexend-600">
             {element.symbol}
           </span>
         </div>
 
-        {/* Bottom: Name (Uppercase & Micro-sized) */}
         <div className="w-full border-t hover:border-none border-white/20 pt-1">
           <p className="text-xs md:text-md truncate opacity-90 font-medium lexend-400">
             {element.name}
@@ -105,9 +104,7 @@ export default function PeriodicTable() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
             {Object.entries(CATEGORY_COLORS).map(([category, colorClass]) => (
               <Link href={`elementCatogories/${category}`} key={category}>
-                <div
-                  className="flex items-center gap-2 md:gap-3 p-2 md:p-3"
-                >
+                <div className="flex items-center gap-2 md:gap-3 p-2 md:p-3">
                   <div
                     className={`w-5 h-5 md:w-6 md:h-6 ${colorClass} border border-white/20`}
                   />
