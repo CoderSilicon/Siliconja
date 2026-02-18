@@ -22,7 +22,7 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
         w-full aspect-square p-2 
         relative flex flex-col justify-between items-start
         transition-all duration-200 hover:scale-95 cursor-pointer
-        ${colorClass}/60 backdrop-blur-2xl text-white hover:z-10 
+        ${colorClass} backdrop-blur-2xl text-white hover:z-10 
       `}
       >
 
