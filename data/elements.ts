@@ -1081,14 +1081,14 @@ export const ELEMENTS = [
 ];
 
 export const CATEGORY_COLORS = {
-  "alkali": "bg-[#D9F3F1]",            // icy teal mist
-  "alkaline-earth": "bg-[#FDE2E4]",    // pale frost rose
-  "transition": "bg-[#E0E7FF]",        // soft glacier indigo
-  "post-transition": "bg-[#E6F4EA]",   // cold mint wash
-  "metalloid": "bg-[#FFF4D6]",         // light muted amber frost
-  "reactive-nonmetal": "bg-[#DBEAFE]", // airy cold blue
-  "noble-gas": "bg-[#F3E8FF]",         // soft lavender ice
-  "lanthanide": "bg-[#E0F2FE]",        // frozen sky
-  "actinide": "bg-[#FDEBD2]",          // pale atomic sand
-  "unknown": "bg-[#F1F5F9]",           // minimal slate fog
+  "alkali": "bg-[#BEE7E3]",            // cool soft teal
+  "alkaline-earth": "bg-[#F8C8D0]",    // frosted rose
+  "transition": "bg-[#C7D2FE]",        // clean periwinkle
+  "post-transition": "bg-[#CDE8D5]",   // mint frost
+  "metalloid": "bg-[#F7E3B5]",         // muted cold amber
+  "reactive-nonmetal": "bg-[#BFDBFE]", // icy sky blue
+  "noble-gas": "bg-[#E9D5FF]",         // light violet mist
+  "lanthanide": "bg-[#BAE6FD]",        // arctic blue
+  "actinide": "bg-[#F5D0A9]",          // pale atomic sand
+  "unknown": "bg-[#E2E8F0]",           // cool slate light
 };
