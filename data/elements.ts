@@ -1081,14 +1081,15 @@ export const ELEMENTS = [
 ];
 
 export const CATEGORY_COLORS = {
-  "alkali": "bg-[#BEE7E3]",            // cool soft teal
-  "alkaline-earth": "bg-[#F8C8D0]",    // frosted rose
-  "transition": "bg-[#C7D2FE]",        // clean periwinkle
-  "post-transition": "bg-[#CDE8D5]",   // mint frost
-  "metalloid": "bg-[#F7E3B5]",         // muted cold amber
-  "reactive-nonmetal": "bg-[#BFDBFE]", // icy sky blue
-  "noble-gas": "bg-[#E9D5FF]",         // light violet mist
-  "lanthanide": "bg-[#BAE6FD]",        // arctic blue
-  "actinide": "bg-[#F5D0A9]",          // pale atomic sand
-  "unknown": "bg-[#E2E8F0]",           // cool slate light
+  "alkali": "bg-[#6DA9A4]",            // muted teal
+  "alkaline-earth": "bg-[#E5989B]",    // dusty rose
+  "transition": "bg-[#8E9AAF]",        // desaturated periwinkle
+  "post-transition": "bg-[#84A98C]",   // sage green
+  "metalloid": "bg-[#E9C46A]",         // muted warm amber
+  "reactive-nonmetal": "bg-[#5C7AEA]", // soft royal blue
+  "noble-gas": "bg-[#C77DFF]",         // pastel violet
+  "lanthanide": "bg-[#4EA8DE]",        // cool sky blue
+  "actinide": "bg-[#F4A261]",          // soft terracotta
+  "unknown": "bg-[#ADB5BD]",           // modern neutral gray
 };
+
