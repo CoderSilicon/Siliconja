@@ -19,10 +19,10 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
     <Link href={`/element/${element.id}`}>
       <div
         className={`
-        w-full aspect-square p-2 
+         aspect-square p-2 
         relative flex flex-col justify-between items-start
         transition-all duration-200 hover:scale-95 cursor-pointer
-        ${colorClass} backdrop-blur-2xl text-white hover:z-10 
+        ${colorClass} text-white hover:z-10 
       `}
       >
 
