@@ -22,7 +22,7 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
         w-full aspect-square p-2 
         relative flex flex-col justify-between items-start
         transition-all duration-200 hover:scale-95 cursor-pointer
-        ${colorClass} text-white hover:z-10
+        ${colorClass} text-white hover:z-10 
       `}
       >
 
@@ -42,7 +42,7 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
 
         {/* Bottom: Name (Uppercase & Micro-sized) */}
         <div className="w-full border-t hover:border-none border-white/20 pt-1">
-          <p className="text-xs md:text-md uppercase tracking-widest truncate opacity-90 font-medium lexend-400">
+          <p className="text-xs md:text-md truncate opacity-90 font-medium lexend-400">
             {element.name}
           </p>
         </div>
