@@ -22,11 +22,9 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
         w-full aspect-square p-2 
         relative flex flex-col justify-between items-start
         transition-all duration-200 hover:scale-95 cursor-pointer
-        ${colorClass} text-white hover:z-10 shadow-sm
+        ${colorClass} text-white hover:z-10
       `}
       >
-        {/* Geometric Accent: A decorative square in the top-right corner */}
-        <div className="absolute top-0 right-0 w-3 h-3 bg-zinc-100/50 backdrop-blur-sm hover:hidden" />
 
         {/* Top: Atomic Number (Left Aligned & Monospaced) */}
         <div className="flex justify-between w-full">
@@ -44,7 +42,7 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
 
         {/* Bottom: Name (Uppercase & Micro-sized) */}
         <div className="w-full border-t hover:border-none border-white/20 pt-1">
-          <p className="text-[8px] md:text-[9px] uppercase tracking-widest truncate opacity-90 font-medium lexend-400">
+          <p className="text-xs md:text-md uppercase tracking-widest truncate opacity-90 font-medium lexend-400">
             {element.name}
           </p>
         </div>
