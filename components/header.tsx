@@ -1,41 +1,29 @@
-export default function Header() {
+"use client";
+
+const Header = () => {
   return (
-    <header className="w-full h-20 bg-[#0F172A] flex items-center justify-center">
-      <svg
-        width="460"
-        height="60"
-        viewBox="0 0 460 60"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        {/* Accent bar */}
-        <rect x="120" y="45" width="220" height="4" fill="#2563EB" rx="2" />
-
-        {/* Normal text */}
-        <text
-          x="50%"
-          y="35"
-          textAnchor="middle"
-          fontSize="26"
-          fontWeight="600"
-          fill="#94A3B8"
-          fontFamily="Inter, sans-serif"
-        >
-          Silico
-        </text>
-
-        {/* Highlighted part */}
-        <text
-          x="50%"
-          y="35"
-          dx="38"
-          fontSize="26"
-          fontWeight="800"
-          fill="#3B82F6"
-          fontFamily="Inter, sans-serif"
-        >
-          nja
-        </text>
-      </svg>
-    </header>
+    <div className="bg-linear-to-b from-zinc-900 to-zinc-950 border-b border-black sticky top-0 z-40">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 py-6 md:py-10">
+        <div className="flex items-center justify-center">
+          <div className="flex items-center gap-3 md:gap-4">
+            <div className="relative">
+              <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-white">
+                <span className="lexend-300 font-bold text-lg md:text-2xl">
+                 [Si<sup className="text-xl">3</sup>]
+                </span>
+              </div>
+            </div>
+            <div>
+              {/* Text color shifted to black to match the reference image theme */}
+              <h1 className="text-2xl md:text-4xl font-bold tracking-tight text-white leading-tight lexend-300">
+                Silicønja
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default Header;
