@@ -1081,34 +1081,23 @@ export const ELEMENTS = [
 ];
 
 export const CATEGORY_COLORS = {
-  "alkali":
-    "bg-gradient-to-b from-[#2BB673] to-[#1F7A63]",
+  alkali: "bg-gradient-to-b from-[#2BB673] to-[#1F7A63]",
 
-  "alkaline-earth":
-    "bg-gradient-to-b from-[#D17B88] to-[#B56576]",
+  "alkaline-earth": "bg-gradient-to-b from-[#D64550] to-[#8B1E2D]",
 
-  "transition":
-    "bg-gradient-to-b from-[#4C63D2] to-[#3A4F9F]",
+  transition: "bg-gradient-to-b from-[#4C63D2] to-[#3A4F9F]",
 
-  "post-transition":
-    "bg-gradient-to-b from-[#3BBFA7] to-[#2A9D8F]",
+  "post-transition": "bg-gradient-to-b from-[#3BBFA7] to-[#2A9D8F]",
 
-  "metalloid":
-    "bg-gradient-to-b from-[#E0A96D] to-[#C68B59]",
+  metalloid: "bg-gradient-to-b from-[#E0A96D] to-[#C68B59]",
 
-  "reactive-nonmetal":
-    "bg-gradient-to-b from-[#3B82F6] to-[#2563EB]",
+  "reactive-nonmetal": "bg-gradient-to-b from-[#3B82F6] to-[#2563EB]",
 
-  "noble-gas":
-    "bg-gradient-to-b from-[#B07DFF] to-[#9D4EDD]",
+  "noble-gas": "bg-gradient-to-b from-[#B07DFF] to-[#9D4EDD]",
 
-  "lanthanide":
-    "bg-gradient-to-b from-[#2EC4E6] to-[#118AB2]",
+  lanthanide: "bg-gradient-to-b from-[#2EC4E6] to-[#118AB2]",
 
-  "actinide":
-    "bg-gradient-to-b from-[#C08457] to-[#A97142]",
+  actinide: "bg-gradient-to-b from-[#C08457] to-[#A97142]",
 
-  "unknown":
-    "bg-gradient-to-b from-[#5C677D] to-[#495057]",
+  unknown: "bg-gradient-to-b from-[#5C677D] to-[#495057]",
 };
-
