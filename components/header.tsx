@@ -14,7 +14,6 @@ const Header = () => {
               </div>
             </div>
             <div>
-              {/* Text color shifted to black to match the reference image theme */}
               <h1 className="text-2xl md:text-4xl font-bold tracking-tight leading-tight lexend-300">
                 Silicønja
               </h1>
