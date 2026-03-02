@@ -42,6 +42,12 @@ export const CATEGORY_DESCRIPTIONS: Record<string, CategoryInfo> = {
     "scientific_profile": "States: Gas/Solid; Configuration: High electron affinity; Bonding: Covalent",
     "system_note": "Organic Essentials"
   },
+  "halogen": {
+  "title": "Halogens",
+  "description": "Derived from the Greek 'hals' (salt) and 'gen' (to produce), meaning 'salt-former.' These highly reactive Group 17 elements possess seven valence electrons, leaving them just one electron short of a stable noble gas configuration. Their strong electronegativity and powerful oxidizing nature make them extremely reactive, especially with alkali and alkaline earth metals, forming salts and ionic compounds essential to biological systems and industrial chemistry.",
+  "scientific_profile": "Block: p-block; Group: 17; Properties: Highly electronegative, Diatomic molecules; Reactivity: Very High",
+  "system_note": "p-block / Period 2–7"
+},
   "noble-gas": {
     "title": "Noble Gases",
     "description": "Named for their 'noble' lack of reactivity, a reference to noble metals like gold that do not tarnish. Because their electron shells are perfectly full, they are chemically 'self-sufficient' and rarely interact with other elements, existing as solitary, monatomic gases.",

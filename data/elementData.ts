@@ -4,7 +4,7 @@ type ElementType = {
   name: string;
   discoveryYear: number;
   discoveredBy: string;
-  category:| "Reactive Nonmetal" | "Metal" | "Metalloid" | "Noble Gas" | "Alkali" | "Alkaline Earth" | "Transition" | "Post-Transition" | "Lanthanide" | "Actinide" | "Unknown";
+  category: "Reactive Nonmetal" | "Halogen" | "Metal" | "Metalloid" | "Noble Gas" | "Alkali" | "Alkaline Earth" | "Transition" | "Post-Transition" | "Lanthanide" | "Actinide" | "Unknown";
   bondingType: "Covalent" | "Ionic" | "Metallic" | "Hydrogen Bond" | "Unknown";
   reactivity: "Low" | "Medium" | "High" | "Unknown";
   reactivityType: string; 
@@ -231,7 +231,7 @@ export const PeriodicData: ElementType[] = [
     name: "Fluorine",
     discoveryYear: 1886,
     discoveredBy: "Henri Moissan",
-    category: "Reactive Nonmetal",
+    category: "Halogen",
     bondingType: "Covalent",
     reactivity: "High",
     reactivityType: "Extremely Reactive",
@@ -431,7 +431,7 @@ export const PeriodicData: ElementType[] = [
     name: "Chlorine",
     discoveryYear: 1774,
     discoveredBy: "Carl Wilhelm Scheele",
-    category: "Reactive Nonmetal",
+    category: "Halogen",
     bondingType: "Covalent",
     reactivity: "High",
     reactivityType: "Strong Oxidizer",
@@ -881,7 +881,7 @@ export const PeriodicData: ElementType[] = [
     name: "Bromine",
     discoveryYear: 1826,
     discoveredBy: "Antoine Jérôme Balard",
-    category: "Reactive Nonmetal",
+    category: "Halogen",
     bondingType: "Covalent",
     reactivity: "High",
     reactivityType: "Highly reactive halogen",
@@ -1368,7 +1368,7 @@ export const PeriodicData: ElementType[] = [
     name: "Iodine",
     discoveryYear: 1811,
     discoveredBy: "Bernard Courtois",
-    category: "Reactive Nonmetal",
+    category: "Halogen",
     bondingType: "Covalent",
     reactivity: "Medium",
     reactivityType: "Reactive halogen",
@@ -2242,7 +2242,7 @@ export const PeriodicData: ElementType[] = [
     name: "Astatine",
     discoveryYear: 1940,
     discoveredBy: "Dale R. Corson",
-    category: "Metalloid",
+    category: "Halogen",
     bondingType: "Covalent",
     reactivity: "High",
     reactivityType: "Highly radioactive halogen",

@@ -79,7 +79,7 @@ export const ELEMENTS = [
     symbol: "F",
     name: "Fluorine",
     number: 9,
-    category: "reactive-nonmetal",
+    category: "halogen",
     row: 2,
     col: 17,
   },
@@ -153,7 +153,7 @@ export const ELEMENTS = [
     symbol: "Cl",
     name: "Chlorine",
     number: 17,
-    category: "reactive-nonmetal",
+    category: "halogen",
     row: 3,
     col: 17,
   },
@@ -317,7 +317,7 @@ export const ELEMENTS = [
     symbol: "Br",
     name: "Bromine",
     number: 35,
-    category: "reactive-nonmetal",
+    category: "halogen",
     row: 4,
     col: 17,
   },
@@ -481,7 +481,7 @@ export const ELEMENTS = [
     symbol: "I",
     name: "Iodine",
     number: 53,
-    category: "reactive-nonmetal",
+    category: "halogen",
     row: 5,
     col: 17,
   },
@@ -645,7 +645,7 @@ export const ELEMENTS = [
     symbol: "At",
     name: "Astatine",
     number: 85,
-    category: "post-transition",
+    category: "halogen",
     row: 6,
     col: 17,
   },
@@ -1081,23 +1081,25 @@ export const ELEMENTS = [
 ];
 
 export const CATEGORY_COLORS = {
-  alkali: "bg-gradient-to-b from-[#2BB673] to-[#1F7A63]",
+  alkali: "bg-linear-to-b from-[#2BB673] to-[#1F7A63]",
 
-  "alkaline-earth": "bg-gradient-to-b from-[#D64550] to-[#8B1E2D]",
+  "alkaline-earth": "bg-linear-to-b from-[#D64550] to-[#8B1E2D]",
 
-  transition: "bg-gradient-to-b from-[#4C63D2] to-[#3A4F9F]",
+  transition: "bg-linear-to-b from-[#4C63D2] to-[#3A4F9F]",
 
-  "post-transition": "bg-gradient-to-b from-[#3BBFA7] to-[#2A9D8F]",
+  "post-transition": "bg-linear-to-b from-[#3BBFA7] to-[#2A9D8F]",
 
-  metalloid: "bg-gradient-to-b from-[#E0A96D] to-[#C68B59]",
+  metalloid: "bg-linear-to-b from-[#E0A96D] to-[#C68B59]",
 
-  "reactive-nonmetal": "bg-gradient-to-b from-[#3B82F6] to-[#2563EB]",
+  "reactive-nonmetal": "bg-linear-to-b from-[#3B82F6] to-[#2563EB]",
 
-  "noble-gas": "bg-gradient-to-b from-[#B07DFF] to-[#9D4EDD]",
+  halogen: "bg-gradient-to-br from-[#FFD000] to-[#FF9F00]",
 
-  lanthanide: "bg-gradient-to-b from-[#2EC4E6] to-[#118AB2]",
+  "noble-gas": "bg-linear-to-b from-[#B07DFF] to-[#9D4EDD]",
 
-  actinide: "bg-gradient-to-b from-[#C08457] to-[#A97142]",
+  lanthanide: "bg-linear-to-b from-[#2EC4E6] to-[#118AB2]",
 
-  unknown: "bg-gradient-to-b from-[#5C677D] to-[#495057]",
+  actinide: "bg-linear-to-b from-[#C08457] to-[#A97142]",
+
+  unknown: "bg-linear-to-b from-[#5C677D] to-[#495057]",
 };
