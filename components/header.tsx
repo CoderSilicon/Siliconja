@@ -9,7 +9,7 @@ const Header = () => {
             <div className="relative">
               <div className="w-10 h-10 md:w-14 md:h-14 flex items-center justify-center">
                 <span className="lexend-300 font-bold text-lg md:text-2xl">
-                 [Si<sup className="text-xl">3</sup>]
+                 [Si<sup className="text-xl">ø3</sup>]
                 </span>
               </div>
             </div>
