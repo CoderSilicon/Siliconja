@@ -1081,25 +1081,39 @@ export const ELEMENTS = [
 ];
 
 export const CATEGORY_COLORS = {
-  alkali: "bg-linear-to-b from-[#2BB673] to-[#1F7A63]",
+  alkali: "bg-[#1F7A63]",
 
-  "alkaline-earth": "bg-linear-to-b from-[#D64550] to-[#8B1E2D]",
+  "alkaline-earth": "bg-[#8B1E2D]",
 
-  transition: "bg-linear-to-b from-[#4C63D2] to-[#3A4F9F]",
+  transition: "bg-[#3A4F9F]",
 
-  "post-transition": "bg-linear-to-b from-[#3BBFA7] to-[#2A9D8F]",
+  "post-transition": "bg-[#2A9D8F]",
 
-  metalloid: "bg-linear-to-b from-[#E0A96D] to-[#C68B59]",
+  metalloid: "bg-[#C68B59]",
 
-  "reactive-nonmetal": "bg-linear-to-b from-[#3B82F6] to-[#2563EB]",
+  "reactive-nonmetal": "bg-[#2563EB]",
 
-  halogen: "bg-gradient-to-br from-[#FFD000] to-[#FF9F00]",
+  halogen: "bg-[#FF9F00]",
 
-  "noble-gas": "bg-linear-to-b from-[#B07DFF] to-[#9D4EDD]",
+  "noble-gas": "bg-[#9D4EDD]",
 
-  lanthanide: "bg-linear-to-b from-[#2EC4E6] to-[#118AB2]",
+  lanthanide: "bg-[#118AB2]",
 
   actinide: "bg-linear-to-b from-[#C08457] to-[#A97142]",
 
-  unknown: "bg-linear-to-b from-[#5C677D] to-[#495057]",
+  unknown: "bg-[#495057]",
+};
+
+export const TEXT_COLOR_MAP: Record<string, string> = {
+  alkali: "text-[#1F7A63]",
+  "alkaline-earth": "text-[#8B1E2D]",
+  transition: "text-[#3A4F9F]",
+  "post-transition": "text-[#2A9D8F]",
+  metalloid: "text-[#C68B59]",
+  "reactive-nonmetal": "text-[#2563EB]",
+  halogen: "text-[#FF9F00]",
+  "noble-gas": "text-[#9D4EDD]",
+  lanthanide: "text-[#118AB2]",
+  actinide: "text-[#C08457]", // Pick the primary color for text
+  unknown: "text-[#495057]",
 };

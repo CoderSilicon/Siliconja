@@ -4,7 +4,17 @@ import "./fonts.css";
 
 export const metadata: Metadata = {
   title: "Silicønja",
-  description: "Encyclopedia of Chemical Elements. :D",
+  description: "Encyclopedia of Chemical Elements",
+  keywords: ["chemistry", "elements", "periodic table", "science"],
+  authors: [{ name: "CoderSilicon" }],
+  openGraph: {
+    title: "Silicønja",
+    description: "Encyclopedia of Chemical Elements",
+    type: "website",
+  },
+  verification:{
+    google: "NOAPF0IigEsK49O_rSZv9G2yvCRcHe9wPi9fL_j4ing",
+  }
 };
 export const viewport: Viewport = {
   width: "device-width",

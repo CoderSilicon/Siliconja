@@ -22,9 +22,9 @@ function ElementCard({ element, colorClass }: ElementCardProps) {
       w-full aspect-square
       p-2
       relative flex flex-col justify-between items-start
-      transition-transform duration-200 hover:scale-95
+      transition-transform duration-200 border-2 hover:border-black hover:text-black/90
       cursor-pointer
-      ${colorClass}
+     ${colorClass}
       text-white
     `}
       >
@@ -116,7 +116,7 @@ export default function PeriodicTable() {
             </div>
           </div>
         </div> */}
-      
+
         <div className="overflow-x-auto">
           <div className="inline-grid gap-0.5 p-2 md:p-4 grid-cols-6 md:hidden ">
             {ELEMENTS.map((element) => (

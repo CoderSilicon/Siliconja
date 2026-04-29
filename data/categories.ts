@@ -8,7 +8,7 @@ export type CategoryInfo = {
 export const CATEGORY_DESCRIPTIONS: Record<string, CategoryInfo> = {
   "alkali": {
     "title": "Alkali Metals",
-    "description": "Derived from the Arabic 'al-qali' (plant ashes), as early chemists extracted potassium carbonate from wood ash.\n These Group 1 metals are defined by a lone 'extroverted' valence electron ($ns^1$) that they are eager to lose. This makes them so reactive they must be stored in oil to prevent them from literally exploding upon contact with air or water.",
+    "description": "Derived from the Arabic 'al-qali / القلي' (plant ashes), as early chemists extracted potassium carbonate from wood ash.\n These Group 1 metals are defined by a lone 'extroverted' valence electron ($ns^1$) that they are eager to lose. This makes them so reactive they must be stored in oil to prevent them from literally exploding upon contact with air or water.",
     "scientific_profile": "Standard state: Solid (Metallic); Configuration: [Noble Gas] ns¹",
     "system_note": "IUPAC Group 1 / s-block"
   },
