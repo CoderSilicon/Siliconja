@@ -4,7 +4,7 @@ import "./fonts.css";
 
 export const metadata: Metadata = {
   title: "Silicønja",
-  icon: "/favicon.ico",
+  icons: "/favicon.ico",
   description: "Encyclopedia of Chemical Elements",
   keywords: ["chemistry", "elements", "periodic table", "science"],
   authors: [{ name: "CoderSilicon" }],
