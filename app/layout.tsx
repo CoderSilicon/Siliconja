@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     description: "Encyclopedia of Chemical Elements",
     type: "website",
   },
-  verification:{
+  verification: {
     google: "NOAPF0IigEsK49O_rSZv9G2yvCRcHe9wPi9fL_j4ing",
-  }
+  },
 };
 export const viewport: Viewport = {
   width: "device-width",
@@ -27,6 +27,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Silicønja",
+    url: "https://siliconja.vercel.app/",
+  };
   return (
     <html lang="en">
       <body className="antialiased">{children}</body>
